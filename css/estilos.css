@@ -220,6 +220,27 @@ img{
 }
 
 
+/* En la parte del formulario no eh puesto, por que todavia no hemos llegado a ese tema!!! */
+/* Contacto */
+
+.contenedor__contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    place-items: center;
+}
+
+.contacto__cuerpo{
+    width: 90%;
+}
+
+.contacto__imagen{
+    width: 95%;
+}
+
+.contacto__figura{
+    text-align: center;
+}
+/* Responsive para Mobil */
 
 @media (max-width: 440px){
     .contenedor{
@@ -239,7 +260,7 @@ img{
 
 }
 
-
+/* Responsive para tablet */
 @media (max-width: 800px){
     .contenedor{
         flex-direction: row;
@@ -259,6 +280,8 @@ img{
 
 }
 
+
+/* ---------------------------------------------------------------------------------------------- */
 /* Footer */
 
 .footer__contenedor{
