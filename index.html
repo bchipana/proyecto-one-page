@@ -11,6 +11,8 @@
     <script src="https://kit.fontawesome.com/4d4a73e866.js" crossorigin="anonymous"></script>
     <!-- Agregando una imagen en el icono de la pagina -->
     <link rel="shorcut icon" href="img/logo.png">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <header class="header__contenedor">
@@ -47,6 +49,8 @@
             </figure>
         </section>
 
+
+
         <!-- Nosotros -->
 
         <section id="nosotros-id" class="contenedor__nosotros contenedor">
@@ -59,7 +63,6 @@
 
             <figure class="nosotros__figura">
                 <img  class="nosotros__imagen" src="img/muebles-dos.jpg" alt="">
-
             </figure>
 
         </section>
@@ -131,20 +134,28 @@
             <div class="contacto__cuerpo">
                 <form action="">
                     <h2 class="titulo titulo--border">Contactanos</h2>
-                    <label for="">Nombres:</label>
-                    <input type="text" placeholder="Escribe tu nombre">
-                    <br>
-                    <label for="">Apellidos:</label>
-                    <input type="text" placeholder="Escribe tu apellido">
-                    <br>
-                    <label for="">Correo electronico</label>
-                    <input type="text" placeholder="Escribe tu correo">
-                    <br>
-                    <label for="">Escribe tu mensaje:</label>
-                    <br>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <br>
-                    <input type="submit">
+                    
+                    <div class="mb-3">
+                        <label  class="form-label">Nombres:</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su nombre">
+                    </div>
+
+                    <div class="mb-3">
+                        <label  class="form-label">Apellidos:</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese sus apellidos">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Correo Electronico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo">
+                    </div>
+
+                    <div class="mb-3">
+                        <label  class="form-label">Comentarios:</label>
+                        <textarea class="form-control" placeholder="Escribe un comentario" id="floatingTextarea2" style="height: 100px"></textarea>
+                    </div>
+                    
+                    <button type="button" class="btn btn-primary btn-lg">Enviar</button>
 
                 </form>
             </div>
