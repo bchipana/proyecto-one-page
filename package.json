@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-coderhouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bchipana/proyecto-one-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bchipana/proyecto-one-page/issues"
+  },
+  "homepage": "https://github.com/bchipana/proyecto-one-page#readme",
+  "devDependencies": {
+    "sass": "^1.54.4"
+  }
+}

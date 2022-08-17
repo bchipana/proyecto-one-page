@@ -1,0 +1,49 @@
+
+/* Nosotros */
+
+.contenedor__nosotros{
+    display: grid;
+    grid-template-columns: repeat(2,4fr);
+    place-items: center;
+    .nosotros__cuerpo{
+        width: 90%;
+        .nosotros__parrafo{
+            margin: 20px 0;
+            line-height: 1.5;
+            font-weight: 300;
+        }  
+        .cta{
+            display: inline-block;
+            color: var(--text-btn);
+            background-color: var(--color-btn);
+            padding: var(--padding-btn);
+            border-radius: var(--border-btn);
+            text-align: center; 
+        }
+        
+        .cta:hover{
+            display: inline-block;
+            color: gold;
+            background-color: var(--color-btn);
+            padding: var(--padding-btn);
+            border-radius: var(--border-btn);
+            text-align: center;   
+        }
+        
+        
+    }
+    
+    .nosotros__figura{
+        text-align: center;
+        .nosotros__imagen{
+            width: 95%;
+        }
+    }
+}
+
+
+
+
+
+
+
