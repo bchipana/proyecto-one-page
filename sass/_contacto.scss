@@ -1,0 +1,21 @@
+
+/* Contacto */
+
+.contenedor__contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    place-items: center;
+
+    .contacto__figura{
+        text-align: center;
+
+        .contacto__imagen{
+            width: 95%;
+        }
+    }
+    .contacto__cuerpo{
+        width: 90%;
+    }
+
+}
+

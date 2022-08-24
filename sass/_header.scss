@@ -1,0 +1,50 @@
+
+
+/* Variables para Header */
+
+$colorNav:wheat;
+$btnHover: goldenrod;
+$colorShadow: #8082a5;
+
+
+/* Header */
+
+
+.header__contenedor{
+    width: 100%;
+    background-color: $colorNav;
+    box-shadow: 2px 2px 4px $colorShadow;
+    top: 0;
+    left: 0;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    z-index: 1;
+    transition: all 500ms ease-in-out;
+
+    .header__imagen{
+        height: 60px;
+        width: auto;
+    }
+    
+    .header__nav{
+        a{
+            color: black;
+            font-weight: normal;
+            margin-left: 1rem;
+        }
+
+        a:hover{
+        color: $btnHover;
+        font-weight: normal;
+        margin-left: 1rem;
+        transition: all 500ms ease-in-out;
+        }
+    }
+    
+}
+
+
