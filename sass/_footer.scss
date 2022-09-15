@@ -3,10 +3,27 @@
 
 /* Footer */
 
+footer{
+    position: relative;    
+}
+
+.footer__contenedor::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0,100% 0, 50% 100%);
+    opacity: 1;
+    background-image:  radial-gradient(#444cf7 0.8px, transparent 0.8px), radial-gradient(#444cf7 0.8px, #e5e5f7 0.8px);
+    background-size: 32px 32px;
+    background-position: 0 0,16px 16px;
+}
+
 .footer__contenedor{
     width: 100%;
-    background-color: #0a141d;
-
+    background-color: #AF7AC5;
     .grupo__uno{
         width: 100%;
         max-width: 1200px;
@@ -20,7 +37,11 @@
                 li{
                     margin-bottom: 15px;
                     a{
-                        color: #8082a5;
+                        color: black;
+                    }
+
+                    a:hover{
+                        color: #E5E7E9;
                     }
                     p{
                         margin-bottom: 15px;
@@ -29,13 +50,14 @@
             } 
 
             h2{
-                color: white;
+                color: black;
                 margin-bottom: 25px ;
                 font-size: 1.5rem;
+                font-weight: bolder;
             }
 
             p{
-                color: #efefef;
+                color: black;
                 margin-bottom: 10px;
             }
         }
@@ -46,22 +68,22 @@
             width: 45px;
             height: 45px;
             line-height: 45px;
-            color: white;
+            color: black;
             margin-right: 10px;
-            background-color: #0d2033;
+            background-color: #9B59B6;
             text-align: center;
             transition: all 300ms ease-in-out;
             }
 
             a:hover{
-                color: blue;
+                color: #C39BD3;
             }
         }
     }
 
 
     .grupo__dos{
-        background-color: #0a1a2a;
+        background-color: #76448A;
         padding: 15px 10px;
         text-align: center;
         color: #fff;
@@ -85,5 +107,21 @@
             padding: 35px 0;
             
         }
+    }
+}
+
+@media (max-width:500px){
+    .footer__contenedor{
+        .grupo__uno{
+            width: 98%;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 30px;
+            padding: 15px 0;
+            
+        }
+    }
+
+    .footer__contenedor::before{
+        display: none;
     }
 }

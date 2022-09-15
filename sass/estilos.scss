@@ -49,7 +49,7 @@ body{
 
 a{
     text-decoration: none !important;
-    cursor: pointer;
+    cursor: pointer !important;
     color: inherit;
 }
 
@@ -97,12 +97,6 @@ img{
 }
 
 
-@media (max-width: 440px){
-    html{
-        font-size: 18px;
-    }
-}
-
 /*  *******************************************************
     *******************************************************
     *******************************************************
@@ -111,11 +105,15 @@ img{
 
 /* RESPONSIVE PARA TODOS LOS DISPOSITIVOS */
 
-/* Responsive para Mobil */
+/* Responsive para Movil */
 
-@media (max-width: 500px){
+@media screen and (max-width:550px){
     :root{
         --padding-btn: 20px 0;
+    }
+
+    html{
+        font-size: 18px;
     }
 
     .contenedor{
@@ -155,13 +153,14 @@ img{
 
     
     .contenedor__servicios{
-        width: 97%;
-        grid-template-columns: 1fr;
+        width: 97% !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(4,1fr) !important;
         grid-template-areas: 
         "card1"
         "card2"
-        "card3"
-        "card4";
+        "card3" 
+        "card4" !important;
     }
 
     .col-100,
@@ -170,14 +169,16 @@ img{
     .col-50,
     .col-33,
     .col-25{
-        width: 100%;
+        width: 100% !important;
     }
 
 
 }
 
+
+
 /* Responsive para tablet */
-@media (max-width: 700px){
+@media screen and (max-width:765px){
     .contenedor{
         flex-direction: row;
         padding: 1rem 0.5rem;
@@ -201,7 +202,11 @@ img{
         }
     }
 
-    
+    /* Especializacion productos */
+
+    .fila{
+        flex-direction: column;
+    }
 
 
     /* Equipo */
@@ -251,13 +256,17 @@ img{
         grid-template-rows: repeat(5,1fr);
         gap: 15px;
         grid-template-areas: 
-        "card1  .    "
-        "card1  card2"
-        "card3  card2"
-        "card3  card4"
-        ".      card4";
+        "card1 .    "
+        "card1 card2"
+        "card3 card2"
+        "card3 card4"
+        ".     card4";
     }
     
+
+    .titulo__producto{
+        margin-top: 80px;
+    }
 }
 
 
@@ -269,4 +278,114 @@ img{
 
 .titulo__producto{
     font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+
+.card-precio{
+        color: gold;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+}
+
+.card:hover{
+    background-color: lightblue;
+    opacity: 0.4;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2%);
+    border-radius: 15px;
+    overflow: hidden;
+    transition-duration: 1000ms;
+    border-bottom: 10px solid rgb(8, 160, 211);
+
+}
+
+
+.fila{
+    display: flex;
+    padding: 2rem 1rem;
+
+}
+
+
+
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Parallax */
+
+.fila.parallax{
+    background-image: url("../img/muebles-dos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 3rem 2rem;
+    margin-bottom: 80px;
+}
+
+.fila.parallax div{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+
+}
+
+.fila.parallax div p{
+    font-size: 1.5rem;
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* CAja de navegacion de productos */
+
+.caja-nav img{
+    width: 20%;
+    margin-bottom: 1em;
+
+
+}
+
+
+.caja-nav a{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: all ease-in-out 500ms;
+    font-weight: bold;
+}
+
+.caja-nav a:hover{
+    background-color: white;
+    color: black;
 }

@@ -19,3 +19,12 @@
     text-align: var(--align-title);
     font-size: 2.5rem;
 }
+
+.titulo--border::after{
+    content: "";
+    display: block;
+    width: 150px;
+    margin-top: 20px;
+    height: 6px;
+    background: #444CF7;
+}

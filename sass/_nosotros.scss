@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(2,4fr);
     place-items: center;
+    margin-top: 1000px;
     .nosotros__cuerpo{
         width: 90%;
         .nosotros__parrafo{
@@ -29,7 +30,7 @@
             text-align: center;   
         }
         
-        
+    
     }
     
     .nosotros__figura{

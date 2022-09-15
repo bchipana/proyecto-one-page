@@ -13,23 +13,44 @@
     <link rel="shorcut icon" href="img/logo.png">
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JQUERY -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <!-- JS -->
+    <script src="js/main.js"></script>
 </head>
 <body>
 
-    <header class="header__contenedor">
+    <header class="transparente">
         
         <img class="header__imagen" src="img/logo.png" alt="Logo Empresa">
-        <nav class="header__nav ">  
-            <a href="index.html">Inicio</a>
-            <a href="#nosotros-id">Nosotros</a>    
-            <a href="#servicios-id">Servicios</a>    
+        <nav>  
+            <a href="index.html" class="activo">Inicio</a>
+            <a href="#nosotros-id" >Nosotros</a>    
+            <a href="#servicios-id"> Servicios</a>    
             <a href="productos.html">Productos</a>           
-            <a href="#equipo-id">Equipo</a>
+            <a href="#equipo-id">Decoraciones</a>
             <a href="#contacto-id">Contacto</a>         
         </nav>
     </header>
 
+    <div id="burger">
+        <div class="barra superior"></div>
+        <div class="barra media"></div>
+        <div class="barra inferior"></div>
 
+    </div>
+
+    <div class="menu">
+        <nav>
+            <a href="index.html">Inicio</a> <hr>
+            <a href="#nosotros-id" >Nosotros</a> <hr>
+            <a href="#servicios-id" >Servicios</a> <hr>
+            <a href="productos.html">Productos</a> <hr>
+            <a href="#equipo-id" >Decoraciones</a> <hr>
+            <a href="#contacto-id" >Contacto</a> <hr>
+        </nav>
+        <p class="copyright">Todos los Derechos Reservados&copy; 2022 </p>
+    </div>
 
     <main>
         
@@ -40,37 +61,34 @@
             <div class="hero-logo">
                 <img src="img/logo.png" alt="">
             </div>
-            <a href="#" class="hero-down">
-                <img src="img/down.svg" alt="">
+            <a href="#pr" class="hero-down">
+                <img src="img/down.svg" alt="flecha abajo">
             </a>
         </div>
     
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br>
-
         <!-- Nosotros -->
+        <section id="pr" >
+            <div id="nosotros-id" class="contenedor__nosotros contenedor primera">
+                <div class="nosotros__cuerpo">
+                    <h2 class="titulo titulo--border">¿Quienes Somos?</h2>
+                    <p class="nosotros__parrafo">Somos la empresa peruana Muebles Casa eros dedica a la venta de muebles, fabricación, producción y toda clase de muebles en guadua y madera.</p>
+                    <p class="nosotros__parrafo">Contamos con una amplia experiencia en el campo de más de 15 años. Nos diferenciamos por nuestra excelente calidad y buenos precios, además de nuestras líneas también fabricamos cualquier idea que el cliente nos transfiera, personalizamos los productos a gusto y preferencia de nuestro cliente, atendiendo así concretamente sus necesidades.</p>
+                    <a href="productos.html" class="cta" target="_blank">Nuestros productos</a>
+                </div>
 
-        <section id="nosotros-id" class="contenedor__nosotros contenedor">
-            <div class="nosotros__cuerpo">
-                <h2 class="titulo titulo--border">¿Quienes Somos?</h2>
-                <p class="nosotros__parrafo">Somos la empresa peruana Muebles Casa eros dedica a la venta de muebles, fabricación, producción y toda clase de muebles en guadua y madera.</p>
-                <p class="nosotros__parrafo">Contamos con una amplia experiencia en el campo de más de 15 años. Nos diferenciamos por nuestra excelente calidad y buenos precios, además de nuestras líneas también fabricamos cualquier idea que el cliente nos transfiera, personalizamos los productos a gusto y preferencia de nuestro cliente, atendiendo así concretamente sus necesidades.</p>
-                <a href="productos.html" class="cta" target="_blank">Nuestros productos</a>
+                <figure class="nosotros__figura">
+                    <img  class="nosotros__imagen" src="img/muebles-dos.jpg" alt="">
+                </figure>
             </div>
-
-            <figure class="nosotros__figura">
-                <img  class="nosotros__imagen" src="img/muebles-dos.jpg" alt="">
-            </figure>
-
         </section>
 
         <!-- Servicios -->
 
         <section class="servicios" id="servicios-id">
+            <span id="servicios2-id"></span>
             <div class="contenedor">
-                <h2 class="titulo">Nuestros Servicios</h2>
+                <h2 class="titulo titulo--border">Nuestros Servicios</h2>
                 <div class="contenedor__servicios">
                     <div class="contenedor__item">
                         <figure class="servicios__figura">
@@ -107,28 +125,58 @@
 
 
 
+        <!-- Se cambio otro tema , se agrego un carrusel de imagenes como implementacion de boostrap en la pagina-->
         <!-- Equipo -->
 
-        <section id="equipo-id" class="contenedor__equipo contenedor">
+        <section id="equipo-id" class=" contenedor">
             <div class="equipo__cuerpo">
-                <h2 class="titulo titulo--border">
-                    Brayan Raul Chipana Ari
-                </h2>
-                <p class="equipo__parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quos, doloribus explicabo eius temporibus porro magni omnis molestiae assumenda perferendis nostrum aspernatur voluptate animi non ducimus saepe quo quae illum beatae fuga. Sint et cum excepturi! Recusandae pariatur qui optio culpa. Praesentium porro eaque quia fuga quaerat, ex blanditiis perspiciatis.</p>
-                <p class="equipo__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et sint neque dignissimos distinctio cumque nisi, cum accusantium architecto numquam praesentium, maiores incidunt ut, ipsam officia reiciendis labore voluptatem fuga.
-                </p>
-                <a href="https://www.linkedin.com/in/brayan-raul-chipana-ari-a9b20b1b8/" target="_blank" class="cta" >Mi informacion</a>
+                <h2 class="titulo titulo--border">Decoraciones</h2>
+                <div id="carouselExampleCaptions" class="carousel slide top-100" data-bs-ride="false" style="margin-top: 60px;">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://media.admagazine.com/photos/618a659ccc7069ed5077c822/3:2/w_3000,h_2000,c_limit/68536.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>SALA PRINCIPAL</h5>
+                          <p>Una manera muy sencilla de conseguir una decoración de salas original es mezclar elementos vintage con los muebles que ya tengas por casa.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://media.vogue.mx/photos/5e7123bc6430320009d48efd/master/w_3000,h_2000,c_limit/escritorio-decoracion-oficina.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>OFICINA PERSONAL</h5>
+                          <p>Sácale el máximo partido a tu oficina con nuestros tips para decoración de oficinas pequeñas ¡Aprovecha hasta el último rincón de tu oficina!</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://media.admagazine.com/photos/61fb008206c10ae95c71bac0/master/w_3000,h_2000,c_limit/Mesa-rectangular.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>COMEDOR PRINCIPAL</h5>
+                          <p>Nuestra decoraciones de comedores tiene un estilo moderno, elegante y rústico. Cuenta con la personalizacion de bancos, sillas, mesa redonda, cuadrada, rectangular.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
-            <figure class="equipo__figura">
-                <img class="equipo__imagen" src="https://thumbs.dreamstime.com/b/icono-de-usuario-predeterminado-vectores-imagen-perfil-avatar-predeterminada-vectorial-medios-sociales-retrato-182347582.jpg" alt="">
-            </figure>
         </section>
 
         <!-- Contacto -->
 
         <section id="contacto-id" class="contenedor__contacto contenedor">
             <figure class="contacto__figura">
-                <img src="img/muebles-uno.jpg" alt="" class="contacto__imagen">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.7491984457165!2d-77.01492209999999!3d-11.9918483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf87bf7b83bf%3A0x1d6f59ee05f393fe!2sAv.%20Canto%20Grande%2C%20San%20Juan%20de%20Lurigancho!5e0!3m2!1ses-419!2spe!4v1661469337591!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </figure>
             <div class="contacto__cuerpo">
                 <form action="">
@@ -136,12 +184,12 @@
                     
                     <div class="mb-3">
                         <label  class="form-label text-black-50">Nombres:</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su nombre">
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ingrese su nombre">
                     </div>
 
                     <div class="mb-3">
                         <label  class="form-label text-black-50">Apellidos:</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese sus apellidos">
+                        <input type="text" class="form-control" id="apellidos" aria-describedby="emailHelp" placeholder="Ingrese sus apellidos">
                     </div>
 
                     <div class="mb-3">
@@ -184,7 +232,7 @@
                                 <span class="fa-solid fa-phone"> 
                                     &nbsp; &nbsp;
                                 </span>
-                                999999999
+                                980345910
                             </a>
                         </li>
                         <li>
@@ -192,7 +240,7 @@
                                 <span class="fa-solid fa-envelope-open">
                                     &nbsp; &nbsp;
                                 </span>
-                                xdinox_15x@hotmail.com
+                                casaeros_mueble@hotmail.com
                             </a>
                         </li>
                     </ul>
@@ -223,5 +271,8 @@
             <small>Todos los Derechos Reservados&copy; 2022</small>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 </html>
